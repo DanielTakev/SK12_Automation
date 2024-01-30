@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class DataTypesDemo {
     public static void main(String[] args) {
         // psvm is the shortcut for creating main method
-        //Hello from Ivaylo
         int something; // null
         something = 10;
         System.out.println(something);
