@@ -4,7 +4,9 @@ import Lecture02.DataTypesDemo;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        DataTypesDemo DataTypesInstance = new DataTypesDemo();
-        DataTypesInstance.main(args);
+        // Example how to execute main method from another class
+
+//        DataTypesDemo DataTypesInstance = new DataTypesDemo();
+//        DataTypesInstance.main(args);
     }
 }
