@@ -5,27 +5,21 @@ import java.util.Scanner;
 public class SwitchCaseExample {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please, enter your grade from 2 to 6: ");
-        int i = scanner.nextInt();
+        System.out.println("Please, enter your desired day of week: ");
+        String dayOfWeek = scanner.nextLine();
         // Check the enhanced switch
-        switch (i) {
-            case 2:
-                System.out.println("Grade is 2");
+        switch (dayOfWeek) {
+            case "Friday":
+                System.out.println(dayOfWeek);
                 break;
-            case 3:
-                System.out.println("Grade is 3");
+            case "Saturday":
+                System.out.println(dayOfWeek);
                 break;
-            case 4:
-                System.out.println("Grade is 4");
-                break;
-            case 5:
-                System.out.println("Grade is 5");
-                break;
-            case 6:
-                System.out.println("Grade is 6");
+            case "Sunday":
+                System.out.println(dayOfWeek);
                 break;
             default:
-                System.out.println("Invalid Grade!");
+                System.out.println("The day is not Friday, Saturday or Sunday! The day is " + dayOfWeek);
         }
     }
 }

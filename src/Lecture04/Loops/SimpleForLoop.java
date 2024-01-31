@@ -23,7 +23,7 @@ public class SimpleForLoop {
 
         // Omitting Initialization and Update
         int myNum = 0;
-        for (; myNum < 5;) { // Assuming 'i' is initialized outside the loop
+        for (; myNum < 5;) { // Assuming 'myNum' is initialized outside the loop
             System.out.println("Iteration: " + myNum);
             myNum++;
         }
