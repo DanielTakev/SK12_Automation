@@ -14,20 +14,20 @@ public class HashSetMethods {
         set.remove("Ivan");
         System.out.println("2. After invoking remove(Ivan) method: " + set);
 
-        HashSet<String> set1 = new HashSet<String>();
-        set1.add("Ekaterina");
-        set1.add("Maya");
-        set.addAll(set1);
+        HashSet<String> someOtherHashSet = new HashSet<String>();
+        someOtherHashSet.add("Ekaterina");
+        someOtherHashSet.add("Maya");
+        set.addAll(someOtherHashSet);
         System.out.println("3. Add set to another set: " + set);
-        //Removing all the new elements from HashSet
-        set.removeAll(set1);
+        // Removing all the new elements from HashSet, based on another collection
+        set.removeAll(someOtherHashSet);
         System.out.println("4. After invoking removeAll() method: " + set);
 
-        //Removing elements on the basis of specified condition
-        set.removeIf(str -> str.contains("Nik"));
+        // Removing elements on the basis of specified condition
+        set.removeIf(eachElement -> eachElement.contains("Nik"));
         System.out.println("5. After invoking removeIf() method: " + set);
 
-        //Removing all the elements available in the set
+        // Removing all the elements available in the set and leaves it empty
         set.clear();
         System.out.println("6. After invoking clear() method: " + set);
     }
