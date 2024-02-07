@@ -11,7 +11,6 @@ public class IfElseExample {
         int num = 100;
         int test = 0;
         if (num > 50) {
-<<<<<<< Updated upstream
             test = 3;
             String testString = "fdfdf";
             System.out.println("TEST IF PRINT");
@@ -21,11 +20,6 @@ public class IfElseExample {
         } else {
             test = 111;
             System.out.println("ELSE");
-=======
-            System.out.println("num is greater than 50");
-        } else {
-            System.out.println("num is less than or equal 50");
->>>>>>> Stashed changes
         }
         System.out.println("Test: " + test);
     }

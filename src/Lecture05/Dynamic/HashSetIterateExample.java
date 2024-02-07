@@ -15,13 +15,13 @@ public class HashSetIterateExample {
         set.add("Two");
         set.add("Two");
         set.add("Two");
-        Iterator<String> myIterator = set.iterator();
-        while (myIterator.hasNext()) {
-            System.out.println(myIterator.next());
-        }
-//        for (String element : set) {
-//            System.out.println(element);
+//        Iterator<String> myIterator = set.iterator();
+//        while (myIterator.hasNext()) {
+//            System.out.println(myIterator.next());
 //        }
+        for (String element : set) {
+            System.out.println(element);
+        }
         System.out.println(set.size());
 
     }

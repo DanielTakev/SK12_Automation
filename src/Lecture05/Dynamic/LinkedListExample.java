@@ -21,6 +21,20 @@ public class LinkedListExample {
         cars.add("Mazda");
         System.out.println(cars);
         System.out.println(cars.get(0));
+        System.out.println(" ************************** ");
 
+        // Parse int to String
+        LinkedList<Integer> intToStringList = new LinkedList<>();
+        // Add some integers to the LinkedList
+        intToStringList.add(10);
+        intToStringList.add(20);
+        intToStringList.add(30);
+
+        // Parse integers to strings while iterating over the LinkedList
+        System.out.println("Parsing integers to strings from LinkedList:");
+        for (Integer number : intToStringList) {
+            String str = Integer.toString(number);
+            System.out.println(str);
+        }
     }
 }
