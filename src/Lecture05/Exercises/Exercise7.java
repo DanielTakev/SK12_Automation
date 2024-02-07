@@ -1,4 +1,4 @@
-package lecture05.exercises;
+package Lecture05.Exercises;
 
 public class Exercise7 {
     // Write a program which validate whether given string is palindrome (A palindrome is a sequence of characters which reads

@@ -1,4 +1,4 @@
-package lecture05.exercises;
+package Lecture05.Exercises;
 
 public class Exercise6 {
     // Find sum of the diagonal of a given 2d matrix with 4 rows and 4 columns

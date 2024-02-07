@@ -1,4 +1,4 @@
-package lecture05.exercises;
+package Lecture05.Exercises;
 
 public class Exercise2 {
     // Print elements of a given 2-d matrix with 4 rows and 3 columns

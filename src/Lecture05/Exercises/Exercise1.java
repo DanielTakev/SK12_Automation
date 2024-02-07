@@ -1,4 +1,4 @@
-package lecture05.exercises;
+package Lecture05.Exercises;
 
 public class Exercise1 {
     // Write program to print sum of a given array elements

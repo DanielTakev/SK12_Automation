@@ -1,4 +1,4 @@
-package lecture05.exercises;
+package Lecture05.Exercises;
 
 public class Exercise4 {
     // Find the biggest element of an array and print it in the console
