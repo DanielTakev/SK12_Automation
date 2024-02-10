@@ -7,7 +7,7 @@ public class Exercise7 {
         int [] list1 = { 12, 15, 32, 42, 55, 75, 122, 132, 150, 180, 200, 5 };
         for (int i = 0; i< list1.length; i ++) {
             if (list1[i] > 150) {
-                continue;
+                break;
             }
             if (list1[i] % 5 == 0) {
                 System.out.println("Number that is divided by 5: " + list1[i]);
