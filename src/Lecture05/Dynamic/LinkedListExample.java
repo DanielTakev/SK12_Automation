@@ -1,6 +1,8 @@
 package Lecture05.Dynamic;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 /*
     Pros:
@@ -36,5 +38,18 @@ public class LinkedListExample {
             String str = Integer.toString(number);
             System.out.println(str);
         }
+
+        // Change array types
+        List<Integer> arrayList = new ArrayList<>();
+        arrayList.add(1);
+        arrayList.add(2);
+        arrayList.add(3);
+        arrayList.add(4);
+
+        // Convert ArrayList to LinkedList
+        LinkedList<Integer> linkedList = new LinkedList<>(arrayList);
+
+        // Print elements of LinkedList
+        System.out.println("LinkedList: " + linkedList);
     }
 }
