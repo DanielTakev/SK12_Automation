@@ -1,14 +1,12 @@
-1. Main prints "hello"
-2. Main executes notThrowit
-3. notThrowit executes throwit
-4. throwit prints "throwit"
-5. throwit throws RuntimeException
-6. throwit does not have any exception handler so
-going to the method that called throwit()  in this case it is notThrowit
-7. notThrowit does not have any exception handler
-so going to the method that called notThrowit()  in this case it is main
-8. main method has Exception handler which catches RuntimeException
-  so it is executed and prints "caught"
-9. Finally block is executed in main -> print finally
-10. Try catch block completed with no unhandled exceptions
-  so program continues as expected and prints after
+This Java example demonstrates exception handling using try-catch-finally blocks:
+
+1. The throwRuntimeException method simulates throwing a runtime exception.
+2. The callThrowRuntimeException method calls throwRuntimeException.
+3. In the main method:
+- The program starts executing and prints "Starting execution...".
+- callThrowRuntimeException is called, which may throw a runtime exception.
+- If an exception occurs, it's caught by the catch block, printing "Caught a runtime exception."
+- The finally block always executes, printing "Finally block executed."
+- The program continues execution after the try-catch-finally block, printing "Execution continues...".
+
+Overall, this example illustrates how to handle exceptions in Java using try-catch-finally blocks, ensuring that resources are properly managed even if an exception occurs.
