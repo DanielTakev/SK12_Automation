@@ -19,6 +19,47 @@ public class Car {
     private String color;
     private int releaseYear;
     private int horsePower;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getReleaseYear() {
+        return releaseYear;
+    }
+
+    public void setReleaseYear(int releaseYear) {
+        this.releaseYear = releaseYear;
+    }
+
+    public int getHorsePower() {
+        return horsePower;
+    }
+
+    public void setHorsePower(int horsePower) {
+        this.horsePower = horsePower;
+    }
+
+    public boolean isSecondHandTick() {
+        return secondHandTick;
+    }
+
+    public void setSecondHandTick(boolean secondHandTick) {
+        this.secondHandTick = secondHandTick;
+    }
+
     private boolean secondHandTick;
 
     public Car(String name, String color, int releaseYear, int horsePower, boolean secondHandTick) {
@@ -46,5 +87,16 @@ public class Car {
     }
 
     public Car() {
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", releaseYear=" + releaseYear +
+                ", horsePower=" + horsePower +
+                ", secondHandTick=" + secondHandTick +
+                '}';
     }
 }

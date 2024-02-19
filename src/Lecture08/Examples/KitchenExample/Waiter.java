@@ -1,7 +1,7 @@
 package Lecture08.Examples.KitchenExample;
 
 public class Waiter {
-    private String sex = "Male";
+    private String gender = "Male";
     private String name;
     private String seniorityLevel;
 
@@ -9,7 +9,7 @@ public class Waiter {
 
     public Waiter(String sex, String name, String seniorityLevel) {
         this.name = name;
-        this.sex = sex;
+        this.gender = sex;
         this.seniorityLevel = seniorityLevel;
     }
     public Waiter(String sex, String name) {
@@ -28,7 +28,7 @@ public class Waiter {
     }
 
     public String getSex() {
-        return this.sex;
+        return this.gender;
     }
 
     public String getSeniorityLevel() {

@@ -1,11 +1,14 @@
 package Lecture08.Examples.Encapsulation;
-
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class BankAccount {
     private String ownerName;
     private double accountBalance = 0;
     private String accountNumber;
+
+    // Alt + Insert keyboard shortcut to include getters and setters automatically
 
     BankAccount(String name) {
         this.ownerName = name;
@@ -36,9 +39,11 @@ public class BankAccount {
     }
 
     private void setAccountNumber(String name) {
-        Date date = new Date();
+        LocalDate currentDate = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        currentDate.format(formatter);
         Random randomNumber = new Random();
-        this.accountNumber = name + "_" + date.getTime() + "_" + randomNumber.nextInt();
+        this.accountNumber = name + "_" + currentDate + "_" + randomNumber.nextInt();
     }
 
     public void makeTransaction(double transaction) {

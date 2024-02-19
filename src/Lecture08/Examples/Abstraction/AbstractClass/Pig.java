@@ -4,10 +4,10 @@ package Lecture08.Examples.Abstraction.AbstractClass;
 class Pig extends Animal {
 
     public void animalSound() {
-        System.out.println("I am a piggie");
+        System.out.println("I am a piggie GRUH");
     }
 
     public void eat() {
-        System.out.println("A pig eats");
+        System.out.println("A pig eats GRUH");
     }
 }

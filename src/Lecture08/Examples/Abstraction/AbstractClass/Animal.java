@@ -7,7 +7,7 @@ abstract class Animal {
 
     // Regular method
     public void sleep() {
-        System.out.println("Zzz");
+        System.out.println("Animal Zzz");
     }
 }
 

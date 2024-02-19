@@ -4,7 +4,7 @@ import java.io.*;
 public class ExceptionsExample {
     public static void main(String[] args)  {
         // Invoking method testTryMultipleCatch with arguments 99 and "0"
-        testTryMultipleCatch(99, "0");
+        testTryMultipleCatch(99, "3434343434343334");
     }
 
     // Method to handle a checked exception (FileNotFoundException)
@@ -57,8 +57,8 @@ public class ExceptionsExample {
             int factor = Integer.parseInt(factorAsString);
             if (number % factor == 0)
                 System.out.println(factor + " is a factor of " + number);
-        } catch (ArithmeticException ex) {
-            System.out.println("Arithmetic (my custom message): " + ex); // Handling arithmetic exception
+        } catch (ArithmeticException dani) {
+            System.out.println("Arithmetic (my custom message): " + dani); // Handling arithmetic exception
         } catch (NumberFormatException ex) {
             System.out.println("Number Format Exception (my custom message): " + ex); // Handling number format exception
         }
