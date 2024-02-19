@@ -1,0 +1,12 @@
+This Java example demonstrates exception handling using try-catch-finally blocks:
+
+1. The throwRuntimeException method simulates throwing a runtime exception.
+2. The callThrowRuntimeException method calls throwRuntimeException.
+3. In the main method:
+- The program starts executing and prints "Starting execution...".
+- callThrowRuntimeException is called, which may throw a runtime exception.
+- If an exception occurs, it's caught by the catch block, printing "Caught a runtime exception."
+- The finally block always executes, printing "Finally block executed."
+- The program continues execution after the try-catch-finally block, printing "Execution continues...".
+
+Overall, this example illustrates how to handle exceptions in Java using try-catch-finally blocks, ensuring that resources are properly managed even if an exception occurs.
