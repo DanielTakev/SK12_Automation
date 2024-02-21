@@ -27,7 +27,7 @@ public class Waiter {
         return this.name;
     }
 
-    public String getSex() {
+    public String getGender() {
         return this.gender;
     }
 
