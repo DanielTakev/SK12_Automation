@@ -31,15 +31,9 @@ public class Main {
 //        System.out.println(myClassNumberWithParam);
 //        System.out.println(myClassNumberWithoutParam);
 
-
-
-
-
-
-
-        Car myNewCar = new Car("Tesla", "color", true);
-        System.out.println(myNewCar.getReleaseYear());
-
-
+        Car myNewCar = new Car("Tesla", "black", true);
+//        System.out.println(myNewCar.getReleaseYear());
+        myNewCar.setName("Volga");
+        System.out.println(myNewCar.getName());
     }
 }

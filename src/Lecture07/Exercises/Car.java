@@ -15,7 +15,7 @@ package Lecture07.Exercises;
 //        • Create a car by provided nothing
 //        Create Car object using each constructor
 public class Car {
-    private String name;
+    public String name;
     private String color;
     private int releaseYear;
     private int horsePower;
@@ -24,8 +24,8 @@ public class Car {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String alaBalaNica) {
+        name = alaBalaNica;
     }
 
     public String getColor() {
